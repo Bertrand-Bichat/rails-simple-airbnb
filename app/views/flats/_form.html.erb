@@ -1,0 +1,42 @@
+<div class="container bg-light w-50">
+  <form>
+    <h1>Add a new Flat</h1>
+    <%= form_for(flat) do |f| %>
+    <div class="form-group">
+      <%= f.label :name %>
+      <%= f.text_field :name, :class => "form-control" %>
+      </div>
+      <div class="form-group">
+      <%= f.label :address %>
+      <%= f.text_field :address, :class => "form-control" %>
+      </div>
+      <div class="form-group">
+      <%= f.label :description %>
+      <%= f.text_area :description, :class => "form-control" %>
+      </div>
+      <div class="form-group">
+      <%= f.label :number_of_guests %>
+      <%= f.number_field :number_of_guests, :class => "form-control" %>
+      </div>
+      <div class="form-group">
+      <%= f.label :price_per_night %>
+      <%= f.number_field :price_per_night, :class => "form-control" %>
+      </div>
+      <%= f.submit 'Create flat', :class => "btn btn-primary mb-3" %>
+      <% end %>
+  </form>
+</div>
+<!--   <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button> -->
